@@ -1,2 +1,2 @@
-Hello Git
+Hello from main
 second line added
