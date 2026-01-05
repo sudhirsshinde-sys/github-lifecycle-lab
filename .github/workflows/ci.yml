@@ -13,8 +13,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Run basic Linux commands
-        run: |
-          echo "Running CI on GitHub Actions"
-          uname -a
-          ls -l
+- name: Run basic Linux commands (intentional failure)
+  run: |
+    echo "Running CI"
+    exit 1
