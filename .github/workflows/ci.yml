@@ -13,9 +13,8 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-       - name: Run basic Linux commands
-         run: |
-           echo "Running CI successfully"
-           uname -a
-           ls -l
-
+      - name: Run basic Linux commands
+        run: |
+          echo "Running CI successfully"
+          uname -a
+          ls -l
