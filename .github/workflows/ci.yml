@@ -13,7 +13,9 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-- name: Run basic Linux commands (intentional failure)
-  run: |
-    echo "Running CI"
-    exit 1
+      - name: Run basic Linux commands (intentional failure)
+        run: |
+          echo "Running CI"
+          uname -a
+          ls -l
+          exit 1
